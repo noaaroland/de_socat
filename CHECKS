@@ -1,0 +1,9 @@
+# Perform some health checks to see if the app is up and running
+# before finishing the deployment.
+# By default, Dash Enterprise waits 10 seconds before sending traffic
+# to your application after you have deployed it.
+# To modify this behavior, uncomment the lines below:
+# WAIT=300      # Wait 300 seconds (5 minutes) before sending traffic. Modify this depending on how long `publish_data.py` takes
+# TIMEOUT=20 # Allow up to 20 seconds to listen for a response
+# ATTEMPTS=3 # Try making the response 3 times before marking the deployment as a failure
+# /app-name/     # Check the health by making a request to `/app-name/`. Replace app-name with the name of your app.
